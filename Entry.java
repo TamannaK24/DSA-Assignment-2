@@ -3,13 +3,14 @@ public class Entry<K, V> {
     K key;
     V value;
 
+    //hashcode function assigned the hash for the value
     public Entry(K key, V value) {
         this.key = key;
         this.value = value;
         this.hash = key.hashCode();
     }
 
-    public boolean equals(HashTableChaining<K, V> other) {
+    public boolean equals(Entry<K, V> other) {
         //checks if the hash codes of both key value pairs is equal, if not then they're not equal
         if (hash != other.hash) {
             return false; 
