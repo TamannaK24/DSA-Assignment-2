@@ -1,41 +1,46 @@
-Insertion Performance Comparison (Time in milliseconds):,,,
+Insertion Performance Comparison (Time in milliseconds),,,
 Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,5,13,103
-Splay Tree,4,7,122
-Hash Chaining,8,17,69
-Hash Probing,1,8,48
+AVL Tree,5,11,116
+Splay Tree,4,12,145
+Hash Chaining,7,24,80
+Hash Probing,1,8,54
 ,,,
-Deletion Performance Comparison (Time in milliseconds):,,,
+,,,
+Deletion Performance Comparison (Time in milliseconds),,,
 Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,0,1,11
+AVL Tree,0,4,13
+Splay Tree,0,1,31
+Hash Chaining,1,20,9
+Hash Probing,0,0,3
+,,,
+,,,
+Search (Lookup) Operation Performance Comparison (Time in milliseconds),,,
+Data Structure,1000 Elements,10000 Elements,100000 Elements
+AVL Tree,0,0,10
 Splay Tree,0,1,13
 Hash Chaining,0,1,9
-Hash Probing,0,0,2
+Hash Probing,0,1,12
 ,,,
-Search (Lookup) Operation Performance Comparison (Time in milliseconds):,,,
-Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,3,1,8
-Splay Tree,0,0,14
-Hash Chaining,0,0,4
-Hash Probing,0,0,4
 ,,,
-Insertion Performance Comparison (Memory in Kilobytes):,,,
+Insertion Performance Comparison (Memory in Kilobytes),,,
 Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,1235,1235,6177
-Splay Tree,1235,1235,4941
-Hash Chaining,1235,2471,18531
-Hash Probing,1235,2471,11515
+AVL Tree,1253,2507,7523
+Splay Tree,2507,2507,5015
+Hash Chaining,2507,2508,15047
+Hash Probing,2507,2508,9155
 ,,,
-Deletion Performance Comparison (Memory in Kilobytes):,,,
-Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,1235,1235,6177
-Splay Tree,1235,1235,4941
-Hash Chaining,1235,2471,18531
-Hash Probing,1235,2471,12751
 ,,,
-Search (Lookup) Operation Performance Comparison (Memory in Kilobytes):,,,
+Deletion Performance Comparison (Memory in Kilobytes),,,
 Data Structure,1000 Elements,10000 Elements,100000 Elements
-AVL Tree,1235,1235,6177
-Splay Tree,1235,1235,4941
-Hash Chaining,1235,2471,18531
-Hash Probing,1235,2471,12751
+AVL Tree,2507,2507,5015
+Splay Tree,2507,2507,5015
+Hash Chaining,2507,2508,15047
+Hash Probing,2507,2508,9155
+,,,
+,,,
+Search (Lookup) Operation Performance Comparison (Memory in Kilobytes),,,
+Data Structure,1000 Elements,10000 Elements,100000 Elements
+AVL Tree,2507,2507,5015
+Splay Tree,2507,2507,5015
+Hash Chaining,2507,2508,15047
+Hash Probing,2507,2508,9155

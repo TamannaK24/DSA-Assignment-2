@@ -6,17 +6,40 @@ Txk220058
 CS 3345.005 
 Data Structures and Algorithms - Omar Hamdy 8:30 am 
 
-Please enter an input data size: 1000
+FILES:
+AVLTree.java
+- code for inserting, deleting, searching, balancing, rotations in an AVL Tree
+Entry.java
+- class made for entry objects (key, value) pairs for both HashTables
+HashTableChaining.java
+- Uses entry class and has Linked Lists in each bucket to handle collisions 
+LinkedList.java 
+- Based off last assignment, Used by HashTableChaining.java
+Main.java
+- Prints out the tables 
+Memory.java
+- Functions that measure memory for insertion, deletion, search for all data structures
+Time.java
+- Functions that measure time for insertion, deletion, search for all data structures
+SplayTree.java
+- code for inserting, deleting, searching, balancing, splaying, and roations in a splay tree
+PerformanceReport.csv
+- all tables and graphs that pair with them
+
+
+
+PERFORMANCE REPORT:
+
 Please enter an input data size: 10000
 Please enter an input data size: 100000
 
 Insertion Performance Comparison (Time in milliseconds): 
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                5ms                     15ms                    128ms
-Splay Tree              4ms                     13ms                    123ms
-Hash Chaining           9ms                     15ms                    77ms
-Hash Probing            1ms                     7ms                     41ms
+AVL Tree                5ms                     15ms                    105ms
+Splay Tree              3ms                     19ms                    133ms
+Hash Chaining           8ms                     17ms                    79ms
+Hash Probing            2ms                     7ms                     64ms
 
 - HashTable Quadratic Probing Performed the best for insertion because it stores element in the array and if it is occupied it just searches for the next open spot
 - HashTable Chaining using linked lists used more time because with more elements, more collision happens, longer linkedlists to cycle through when searching
@@ -27,9 +50,9 @@ Hash Probing            1ms                     7ms                     41ms
 Deletion Performance Comparison (Time in milliseconds): 
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                0ms                     1ms                     11ms
+AVL Tree                0ms                     1ms                     13ms
 Splay Tree              0ms                     1ms                     14ms
-Hash Chaining           0ms                     1ms                     10ms
+Hash Chaining           0ms                     1ms                     12ms
 Hash Probing            0ms                     0ms                     3ms
 
 - HashTable Quadrating Probing performed fastest because it is just a spot being deleted, table is not restructured every time 
@@ -41,34 +64,34 @@ Search (Lookup) Operation Performance Comparison (Time in milliseconds):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
 AVL Tree                0ms                     0ms                     8ms
-Splay Tree              0ms                     0ms                     12ms
-Hash Chaining           0ms                     0ms                     6ms
-Hash Probing            0ms                     0ms                     2ms
+Splay Tree              0ms                     2ms                     15ms
+Hash Chaining           0ms                     1ms                     7ms
+Hash Probing            0ms                     1ms                     7ms
 
 - HashTable Quadratic Probing is fastest because it is a simple array and you are able to probe until you find the element
 - HashTable chaining is is second fast but still takes a little long because of linked lists
 - AVL Search si O(logn) but is time consuming at large numbero f elements
 - Splay tree is similar but slower because it splays with every search, also O(log n)
 
-Insertion Performance Comparison (Memory in Kilobytes): 
+Insertion Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  11470KB
+AVL Tree                1268KB                  1268KB                  6344KB
+Splay Tree              1268KB                  1268KB                  3806KB
+Hash Chaining           1268KB                  2537KB                  15226KB
+Hash Probing            1268KB                  1268KB                  8701KB
 
 - AVL trees and splay trees do not use as much memory
 - HashTable Chaining uses alot of memory because of linked lists pointers in each bucket and having objects in each node
 - HashTable Probing is slightly more efficient because it is an array and does not contain linkedlists in every bucket
 
-Deletion Performance Comparison (Memory in Kilobytes): 
+Deletion Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  12700KB
+AVL Tree                1268KB                  1268KB                  3806KB
+Splay Tree              1268KB                  1268KB                  3806KB
+Hash Chaining           1268KB                  2537KB                  15226KB
+Hash Probing            1268KB                  1268KB                  8701KB
 
 - identical to insertion because when an element is deleted in java, the allocated memory for the node slot is not immediately released and java uses automatic garbage collection 
 - also in hashtables often the slot is still there in the table but the object is not there, not completely deleting the slot so it is still structurally the same
@@ -76,9 +99,9 @@ Hash Probing            1229KB                  2459KB                  12700KB
 Search (Lookup) Operation Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  12700KB
+AVL Tree                1268KB                  1268KB                  3806KB
+Splay Tree              1268KB                  1268KB                  3806KB
+Hash Chaining           1268KB                  2537KB                  15226KB
+Hash Probing            1268KB                  1268KB                  8701KB
 
 - read only operations and don't modify the structure or allocate new memory to adding any data 

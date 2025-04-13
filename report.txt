@@ -5,47 +5,47 @@ Please enter an input data size: 100000
 Insertion Performance Comparison (Time in milliseconds): 
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                5ms                     15ms                    128ms
-Splay Tree              4ms                     13ms                    123ms
-Hash Chaining           9ms                     15ms                    77ms
-Hash Probing            1ms                     7ms                     41ms
+AVL Tree                5ms                     11ms                    116ms
+Splay Tree              4ms                     12ms                    145ms
+Hash Chaining           7ms                     24ms                    80ms
+Hash Probing            1ms                     8ms                     54ms
 
 Deletion Performance Comparison (Time in milliseconds): 
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                0ms                     1ms                     11ms
-Splay Tree              0ms                     1ms                     14ms
-Hash Chaining           0ms                     1ms                     10ms
+AVL Tree                0ms                     4ms                     13ms
+Splay Tree              0ms                     1ms                     31ms
+Hash Chaining           1ms                     20ms                    9ms
 Hash Probing            0ms                     0ms                     3ms
 
 Search (Lookup) Operation Performance Comparison (Time in milliseconds): 
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                0ms                     0ms                     8ms
-Splay Tree              0ms                     0ms                     12ms
-Hash Chaining           0ms                     0ms                     6ms
-Hash Probing            0ms                     0ms                     2ms
+AVL Tree                0ms                     0ms                     10ms
+Splay Tree              0ms                     1ms                     13ms
+Hash Chaining           0ms                     1ms                     9ms
+Hash Probing            0ms                     1ms                     12ms
 
-Insertion Performance Comparison (Memory in Kilobytes): 
+Insertion Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  11470KB
+AVL Tree                1253KB                  2507KB                  7523KB
+Splay Tree              2507KB                  2507KB                  5015KB
+Hash Chaining           2507KB                  2508KB                  15047KB
+Hash Probing            2507KB                  2508KB                  9155KB
 
-Deletion Performance Comparison (Memory in Kilobytes): 
+Deletion Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  12700KB
+AVL Tree                2507KB                  2507KB                  5015KB
+Splay Tree              2507KB                  2507KB                  5015KB
+Hash Chaining           2507KB                  2508KB                  15047KB
+Hash Probing            2507KB                  2508KB                  9155KB
 
 Search (Lookup) Operation Performance Comparison (Memory in Kilobytes):
 --------------------------------------------------------------------------------------------
 Data Structure          1000 Elements           10000 Elements          100000 Elements
-AVL Tree                1229KB                  1229KB                  6149KB
-Splay Tree              1229KB                  1229KB                  4919KB
-Hash Chaining           1229KB                  2459KB                  18447KB
-Hash Probing            1229KB                  2459KB                  12700KB
+AVL Tree                2507KB                  2507KB                  5015KB
+Splay Tree              2507KB                  2507KB                  5015KB
+Hash Chaining           2507KB                  2508KB                  15047KB
+Hash Probing            2507KB                  2508KB                  9155KB
